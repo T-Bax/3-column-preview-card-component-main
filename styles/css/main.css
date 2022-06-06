@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+:root{
+    --clr-primary-brightorange: hsl(31, 77%, 52%);
+    --clr-primary-darkcyan: hsl(184, 100%, 22%);
+    --clr-primary-verydarkcyan: hsl(179, 100%, 13%);
+
+    --clr-neutral-transparentwhite: hsla(0, 0%, 100%, 0.75);
+    --clr-neutral-verylightgray: hsl(0, 0%, 95%);
+
+    --fs-base: 15px;
+    --ff-primary: 'Lexend Deca', sans-serif;
+    --ff-secondary: 'Big Shoulders Display', cursive;
+}
+
+body{
+    display: flex; 
+    align-items: center; 
+    min-height: 100vh; 
+    margin: 0;
+    background-color: var(--clr-neutral-verylightgray);
+    font-family: var(--ff-primary);
+    font-size: var(--fs-base);
+    color: var(--clr-neutral-transparentwhite);
+    font-weight: 400;
+    
+}
+h1{
+    margin-top: 1.85rem;
+    font-family: var(--ff-secondary);
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size:2.5rem;
+    color: var(--clr-neutral-verylightgray);
+}
+p{
+    margin-top:1rem;
+    margin-bottom:1rem;
+    line-height: 1.6rem;
+}
+main{
+    
+    width: 325px;
+    margin-left: auto;
+    margin-right:auto;
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+button{
+    border-radius: 4rem;
+    border: none;
+    padding: 1rem 2rem;
+    text-align: center;
+    text-decoration: none;
+    margin: 0 0;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: inherit;
+    background-color: var(--clr-neutral-verylightgray);
+}
+.partition{
+    padding: 3rem;
+    
+}
+
+.first{
+    background-color: var(--clr-primary-brightorange);
+    border-radius: .5rem .5rem 0 0;
+}
+.first button{
+    color: var(--clr-primary-brightorange);
+}
+.middle{
+    background-color: var(--clr-primary-darkcyan);
+}
+.middle button{
+    color: var(--clr-primary-darkcyan);
+}
+.last{
+    background-color: var(--clr-primary-verydarkcyan);
+    border-radius: 0 0 .5rem .5rem;
+}
+.last button{
+    color: var(--clr-primary-verydarkcyan);
+}
+
+@media (min-width: 975px) {
+    main{
+        width: 925px;
+        flex-direction:row;
+    }
+    .first{
+        border-radius: .5rem 0 0 .5rem;
+    }
+    .last{
+        border-radius: 0 .5rem .5rem 0;
+    }
+    p{
+        margin-bottom: 5rem;
+    }
+}
