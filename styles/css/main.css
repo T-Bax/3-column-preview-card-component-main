@@ -49,9 +49,14 @@ main{
 }
 button{
     border-radius: 4rem;
+<<<<<<< Updated upstream
     border-style: solid;
     border-color: var(--clr-neutral-transparentwhite);
     padding: 1rem 2rem;
+=======
+    border: none;
+    padding: .8rem 2rem;
+>>>>>>> Stashed changes
     text-align: center;
     text-decoration: none;
     margin: 0 0;
