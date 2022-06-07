@@ -51,7 +51,6 @@ button{
     border-radius: 4rem;
     border-style: solid;
     border-color: var(--clr-neutral-transparentwhite);
-    border: none;
     padding: .8rem 2rem;
     text-align: center;
     text-decoration: none;
