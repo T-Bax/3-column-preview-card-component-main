@@ -49,7 +49,8 @@ main{
 }
 button{
     border-radius: 4rem;
-    border: none;
+    border-style: solid;
+    border-color: var(--clr-neutral-transparentwhite);
     padding: 1rem 2rem;
     text-align: center;
     text-decoration: none;
@@ -70,12 +71,22 @@ button{
 }
 .first button{
     color: var(--clr-primary-brightorange);
+    
+}
+.first button:hover{
+    background-color: var(--clr-primary-brightorange);
+    color: var(--clr-neutral-transparentwhite);
 }
 .middle{
     background-color: var(--clr-primary-darkcyan);
 }
 .middle button{
     color: var(--clr-primary-darkcyan);
+
+}
+.middle button:hover{
+    background-color: var(--clr-primary-darkcyan);
+    color: var(--clr-neutral-transparentwhite);
 }
 .last{
     background-color: var(--clr-primary-verydarkcyan);
@@ -83,6 +94,10 @@ button{
 }
 .last button{
     color: var(--clr-primary-verydarkcyan);
+}
+.last button:hover{
+    background-color: var(--clr-primary-verydarkcyan);
+    color: var(--clr-neutral-transparentwhite);
 }
 
 @media (min-width: 975px) {
